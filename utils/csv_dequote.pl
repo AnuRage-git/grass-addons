@@ -46,8 +46,8 @@ if (-e $outfile) {
 
 my $csv = Text::CSV->new();
 
-open (CSVin, "<", $infile) or die "$infile: $!";
-open (CSVout, ">", $outfile) or die "$outfile: $!";
+open (my $CSVin, "<", $infile) or die "$infile: $!";
+open (my $CSVout, ">", $outfile) or die "$outfile: $!";
 
 
 while (<CSVin>) {
